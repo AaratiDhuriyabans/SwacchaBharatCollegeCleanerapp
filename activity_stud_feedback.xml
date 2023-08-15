@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stud_feedback">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*****FeedBack*****"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#4DA250"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"></TextView>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/c2"
+            android:gravity="center"
+            android:layout_gravity="center"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll Number:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#508B53"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#559757"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#539656"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestions"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#598D5B"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/f4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#48744A"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/f5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+    android:id="@+id/sf1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="send"
+    android:layout_marginLeft="100dp"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="#4E7C50"
+    android:onClick="studentsend"></Button>
+        <Button
+            android:id="@+id/sff2"
+            android:layout_toRightOf="@+id/sf1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Back"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#4E7C50"
+            android:onClick="backfeedback"></Button>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7066075305\n What's App"
+            android:textColor="#0F0C0C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            ></TextView>
+        <Button
+            android:id="@+id/sf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_share_black_24dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#4E7C50"
+            android:onClick="studentshare"></Button>
+
+
+
+    </LinearLayout>
+    </FrameLayout>
+</ScrollView>

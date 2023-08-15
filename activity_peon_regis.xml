@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".peon_regis">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*****PEON REGISTRATION*****"
+                android:textSize="20dp"
+                android:textColor="#D84444"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/c2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID*:"
+                android:textSize="20dp"
+                android:textColor="#4F9752"/>
+            <EditText
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME*:"
+                android:textSize="20dp"
+                android:textColor="#4E8651"/>
+            <EditText
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName*"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#458548"></TextView>
+            <EditText
+                android:id="@+id/p3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password*"
+                android:textColor="#4F8B51"
+                android:textStyle="bold"
+                android:textSize="20dp"></TextView>
+            <EditText
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password*"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#4A7A4C"
+                ></TextView>
+            <EditText
+                android:id="@+id/p5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENDER*:"
+                android:textSize="20dp"
+                android:textColor="#4C884E"/>
+            <RadioGroup
+                android:id="@+id/prg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/pr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#497C4B"
+                    android:onClick="radiobuttonClicked"
+                    />
+                <RadioButton
+                    android:id="@+id/pr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#4F8D52"
+                    android:onClick="radiobuttonClicked"
+                    /></RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEPARTMENT*:"
+                android:textSize="20dp"
+                android:textColor="#487C4A"/>
+            <Spinner
+                android:id="@+id/sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOBILE NUMBER*:"
+                android:textSize="20dp"
+                android:textColor="#508D52"/>
+            <EditText
+                android:id="@+id/p6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:padding="20dp">
+                <Button
+                    android:id="@+id/ptb1"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:textSize="20dp"
+                    android:textColor="#D34F7B"
+                    android:onClick="saveRecord"/>
+                <Button
+                    android:id="@+id/ptb2"
+                    android:layout_toRightOf="@+id/ptb1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="UPDATE"
+                    android:onClick="updateRecord"
+                    android:textColor="#E91E63"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:padding="20dp">
+                <Button
+                    android:id="@+id/ptb3"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="DELETE"
+                    android:textColor="#E91E63"
+                    android:textSize="20dp"
+                    android:onClick="deleteRecord"/>
+                <Button
+                    android:id="@+id/ptb4"
+                    android:layout_toRightOf="@+id/ptb3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="CANCEL"
+                    android:textColor="#E91E63"
+                    android:textSize="20dp"
+                    android:onClick="Cancel"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

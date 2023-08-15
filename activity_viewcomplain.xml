@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewcomplain">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swachh Bharat College Cleaner App"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#509696"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/c8"
+                android:layout_gravity="center"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*****VIEWCOMPLAINT*****"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <EditText
+            android:id="@+id/tt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#0E0D0D"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+                >
+        </EditText>
+
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="150dp">
+            <Button
+                android:id="@+id/vb1"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="LOAD"
+                android:textSize="20dp"
+                android:textColor="#D34F7B"
+                android:onClick="uploadRecord1"/>
+
+
+
+                <Button
+                    android:id="@+id/vb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ComplaintReport"
+                    android:textColor="#E91E36"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/vb1"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:onClick="viewreport">
+                </Button>
+
+
+            </RelativeLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textColor="#E91E36"
+    android:textSize="20dp"
+    android:text="back"
+    android:onClick="backview"></Button>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</ScrollView>

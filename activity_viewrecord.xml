@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewrecord">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swachh Bharat College Cleaner App"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#509696"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/c8"
+                android:layout_gravity="center"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*****VIEW COMPLAINT*****"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ROLL NUMBER*:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+            <EditText
+                android:id="@+id/cc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME*:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+            <EditText
+                android:id="@+id/cc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLOCK*:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+
+            <EditText
+                android:id="@+id/cc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLASS ROOM*:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+            <EditText
+                android:id="@+id/cc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEPARTMENT*:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+
+
+            <EditText
+                android:id="@+id/cc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATE:"
+                android:textSize="20dp"
+                android:textColor="#6FB3AC"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="102dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="" />
+
+
+            <Button
+                android:id="@+id/Cb2"
+                android:layout_toRightOf="@+id/Cb1"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="back"
+                android:textColor="#E91E63"
+                android:textSize="20dp"
+                android:onClick="back"
+
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

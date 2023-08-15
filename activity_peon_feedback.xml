@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".peon_feedback">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*****FeedBack*****"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#0E0D0D"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"></TextView>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/c2"
+            android:gravity="center"
+            android:layout_gravity="center"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peon Id:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#508352"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/pp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#4D7E4F"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/pp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#4B7A4D"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/pp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestions"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#568357"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/pp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#559158"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/pp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"></EditText>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            >
+
+        <Button
+            android:id="@+id/pbb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:layout_marginLeft="40dp"
+            android:textColor="#4B7E4D"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="peonsend"></Button>
+        <Button
+            android:id="@+id/pbb2"
+            android:layout_toRightOf="@+id/pbb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_marginLeft="40dp"
+            android:textColor="#4B7E4D"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="backpeon"></Button>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Status to Students"
+            android:textColor="#0F0C0C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            ></TextView>
+
+        <Button
+            android:id="@+id/pbb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_share_black_24dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#4E7C50"
+            android:onClick="peonshare"></Button>
+
+
+
+    </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
